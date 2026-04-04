@@ -225,6 +225,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
+    color: var(--color-white);
+}
+
+.card-icon .material-symbols-outlined {
+    font-size: 2.2rem;
 }
 
 .service-card h5 {
@@ -305,8 +310,86 @@
     }
 }
 
+/* ===== Event Section Styles ===== */
+.event-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.event-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-dark));
+    color: var(--color-white);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+.event-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.event-icon .material-symbols-outlined {
+    font-size: 3rem;
+}
+
+.event-subtitle .material-symbols-outlined {
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.event-list .material-symbols-outlined {
+    font-size: 1.2em;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+    color: var(--color-white);
+}
+
+.event-container h2 {
+    color: var(--color-white);
+    margin-bottom: 0.5rem;
+}
+
+.event-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+}
+
+.event-intro {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+}
+
+.event-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.event-list li {
+    color: var(--color-white);
+    padding: 0.3rem 0;
+}
+
+.event-available {
+    color: rgba(255, 255, 255, 0.85);
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.event-cta .hero-btn {
+    background-color: var(--color-accent);
+}
+
+.event-cta .hero-btn:hover {
+    background-color: var(--color-cream);
+    color: var(--color-primary);
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
-        
+
 /* Tablet Styles */
 @media (max-width: 900px) {
     header {
@@ -444,5 +527,17 @@
 
     .floating-beans {
        display: none;
+    }
+
+    .event-section {
+        padding: 2rem 1rem;
+    }
+
+    .event-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .event-icon {
+        font-size: 2.5rem;
     }
 }
