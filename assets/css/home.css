@@ -225,6 +225,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
+    color: var(--color-white);
+}
+
+.card-icon .material-symbols-outlined {
+    font-size: 2.2rem;
 }
 
 .service-card h5 {
@@ -305,8 +310,66 @@
     }
 }
 
+/* ===== Event Announcement Banner ===== */
+.event-banner {
+    padding: 2rem 2rem 1rem;
+}
+
+.event-banner__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-dark));
+    color: var(--color-white);
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.event-banner__badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--color-accent);
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-size: var(--fs-body);
+}
+
+.event-banner__badge .material-symbols-outlined {
+    font-size: 1.4rem;
+}
+
+.event-banner__text {
+    flex: 1;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
+    font-size: var(--fs-body);
+}
+
+.event-banner__link {
+    color: var(--color-white);
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    background: var(--color-accent);
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    font-weight: var(--fw-med);
+    transition: background-color 0.3s ease;
+}
+
+.event-banner__link:hover {
+    background-color: var(--color-cream);
+    color: var(--color-primary);
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
-        
+
 /* Tablet Styles */
 @media (max-width: 900px) {
     header {
@@ -444,5 +507,16 @@
 
     .floating-beans {
        display: none;
+    }
+
+    .event-banner {
+        padding: 1rem;
+    }
+
+    .event-banner__inner {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 1rem;
     }
 }
