@@ -155,31 +155,57 @@ footer {
     color: var(--color-white);
     font-size: 0.925rem;
     font-weight: var(--fw-reg);
-    padding: 1.5rem;
+    padding: 2.5rem 2rem 1.5rem;
     margin-top: auto;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.footer-left {
-    flex: 1;
-    text-align: left;
-    max-width: 40%;
+.footer-col p {
+    margin: 0.4rem 0;
 }
 
-.footer-left p {
-    margin: 0.5rem;
+.footer-heading {
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.75rem !important;
+    font-size: 1rem;
 }
 
-.footer-center {
-    flex: 1;
-    text-align: left; 
-    margin-left: 0;
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    margin: 0.4rem 0;
+}
+
+.footer-nav a,
+.footer-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-link:hover {
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -195,16 +221,9 @@ footer {
     }
 
     .footer-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         text-align: center;
         gap: 1.5rem;
-    }
-
-    .footer-left,
-    .footer-center,
-    .footer-right {
-        max-width: 100%;
-        text-align: center;
     }
 }
 

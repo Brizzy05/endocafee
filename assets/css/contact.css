@@ -55,6 +55,16 @@ body {
     justify-content: center;
 }
 
+.contact-link {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;
