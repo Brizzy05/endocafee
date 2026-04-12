@@ -33,7 +33,11 @@ body {
     margin-bottom: 2rem;
 }
 
-.about-block h3 {
+.about-section > .section-title {
+    margin-bottom: 2rem;
+}
+
+.about-block h2 {
     font-size: var(--fs-heading);
     font-weight: var(--fw-bold);
     color: var(--color-primary);

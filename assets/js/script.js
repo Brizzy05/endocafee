@@ -18,6 +18,18 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// Pause hero videos on mobile to improve page speed
+function handleHeroVideos() {
+    const videos = document.querySelectorAll('.hero-video');
+    if (window.innerWidth <= 768) {
+        videos.forEach(v => { v.pause(); v.removeAttribute('autoplay'); });
+    } else {
+        videos.forEach(v => { v.play(); });
+    }
+}
+handleHeroVideos();
+window.addEventListener('resize', handleHeroVideos);
+
 // Add scroll effect to header
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');

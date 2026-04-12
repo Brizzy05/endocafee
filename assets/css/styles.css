@@ -208,6 +208,20 @@ footer {
     opacity: 0.8;
 }
 
+/* ===== Internal Links ===== */
+.internal-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: var(--fw-med);
+}
+
+.internal-link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
         
 /* Tablet Styles */
