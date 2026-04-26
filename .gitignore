@@ -28,3 +28,5 @@ playwright.config.js
 tests/
 test-results/
 test-results/.last-run.json
+assets/.DS_Store
+assets/.DS_Store
